@@ -1,0 +1,17 @@
+
+    <!ELEMENT menu (meals, beverages, otherBeverages)>
+    <!ELEMENT meals (mealItem+)>
+    <!ELEMENT mealItem (name, price, description, image?)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT image (#PCDATA)>
+    
+    <!ELEMENT beverages (category+)>
+    <!ELEMENT category (name, beverageItem+)>
+    <!ELEMENT beverageItem (size, price, description?, image?)>
+    <!ELEMENT size (#PCDATA)>
+    
+    <!ELEMENT otherBeverages (otherBeverageItem+)>
+    <!ELEMENT otherBeverageItem (name, price, image?)>
+

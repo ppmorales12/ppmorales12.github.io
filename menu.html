@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bryan's Café</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="menu.js" defer></script> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Company Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Menu</h1>
+
+  
+        <section class="menu-section">
+            <h2>Meals</h2>
+            <table id="meals-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Image</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </section>
+        
+
+        
+        <section class="menu-section">
+            <h2>Coffee and Hot Chocolates</h2>
+            <table id="beverages-table">
+                <thead>
+                    <tr>
+                        <th>Sizes</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Image</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+        
+
+     
+        <section class="menu-section">
+            <h2>Other Beverages</h2>
+            <table id="other-beverages-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Image</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+            </table>
+        </section>        
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Bryan's Café. All rights reserved.</p>
+        <a href="privacy.html" target="_blank">Privacy Policy</a>
+    </footer>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const currentYear = new Date().getFullYear();
+        document.getElementById("current-year").textContent = currentYear;
+    });
+    </script>
+    
+</body>
+</html>
